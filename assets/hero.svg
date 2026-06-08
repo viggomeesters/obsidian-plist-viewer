@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="420" viewBox="0 0 1280 420" role="img" aria-labelledby="title desc">
+  <title id="title">PLIST Viewer hero</title>
+  <desc id="desc">A dark read-only Apple configuration profile viewer interface with tree, source, and security summary modes.</desc>
+  <rect width="1280" height="420" fill="#101418"/>
+  <rect x="70" y="54" width="1140" height="312" rx="14" fill="#171d24" stroke="#334155"/>
+  <text x="110" y="116" fill="#f8fafc" font-family="Inter, Arial, sans-serif" font-size="46" font-weight="700">PLIST Viewer</text>
+  <text x="110" y="154" fill="#aab4c3" font-family="Inter, Arial, sans-serif" font-size="20">Read-only tree, source, and security summaries for .plist and .mobileconfig</text>
+  <rect x="110" y="190" width="390" height="118" rx="8" fill="#0d1218" stroke="#334155"/>
+  <text x="132" y="226" fill="#4fb3ff" font-family="SFMono-Regular, Menlo, monospace" font-size="19">PayloadType</text>
+  <text x="262" y="226" fill="#e9c46a" font-family="SFMono-Regular, Menlo, monospace" font-size="18">com.apple.wifi.managed</text>
+  <text x="132" y="258" fill="#4fb3ff" font-family="SFMono-Regular, Menlo, monospace" font-size="19">Password</text>
+  <text x="238" y="258" fill="#f59e0b" font-family="SFMono-Regular, Menlo, monospace" font-size="18">[masked]</text>
+  <text x="132" y="290" fill="#ef4444" font-family="SFMono-Regular, Menlo, monospace" font-size="18">Root certificate warning</text>
+  <rect x="548" y="86" width="590" height="220" rx="8" fill="#0d1218" stroke="#334155"/>
+  <rect x="572" y="112" width="210" height="34" rx="6" fill="#1e293b" stroke="#3f4c61"/>
+  <text x="594" y="135" fill="#aab4c3" font-family="Inter, Arial, sans-serif" font-size="15">Filter identifiers</text>
+  <rect x="802" y="112" width="70" height="34" rx="6" fill="#24435b"/>
+  <text x="820" y="135" fill="#f8fafc" font-family="Inter, Arial, sans-serif" font-size="15">Tree</text>
+  <rect x="878" y="112" width="82" height="34" rx="6" fill="#171d24" stroke="#3f4c61"/>
+  <text x="895" y="135" fill="#aab4c3" font-family="Inter, Arial, sans-serif" font-size="15">Source</text>
+  <rect x="966" y="112" width="96" height="34" rx="6" fill="#171d24" stroke="#3f4c61"/>
+  <text x="983" y="135" fill="#aab4c3" font-family="Inter, Arial, sans-serif" font-size="15">Security</text>
+  <text x="578" y="184" fill="#4fb3ff" font-family="SFMono-Regular, Menlo, monospace" font-size="18">PayloadContent</text>
+  <text x="748" y="184" fill="#7f8a9f" font-family="SFMono-Regular, Menlo, monospace" font-size="13">array · 4 children</text>
+  <text x="608" y="220" fill="#4fb3ff" font-family="SFMono-Regular, Menlo, monospace" font-size="17">Office Wi-Fi</text>
+  <text x="748" y="220" fill="#e9c46a" font-family="SFMono-Regular, Menlo, monospace" font-size="17">com.example.profile.wifi</text>
+  <text x="608" y="252" fill="#4fb3ff" font-family="SFMono-Regular, Menlo, monospace" font-size="17">Example VPN</text>
+  <text x="748" y="252" fill="#e9c46a" font-family="SFMono-Regular, Menlo, monospace" font-size="17">com.apple.vpn.managed</text>
+</svg>

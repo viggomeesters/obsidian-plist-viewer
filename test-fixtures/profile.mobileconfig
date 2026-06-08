@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "https://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>PayloadDisplayName</key>
+  <string>Security Review Demo</string>
+  <key>PayloadIdentifier</key>
+  <string>com.example.security-review</string>
+  <key>PayloadOrganization</key>
+  <string>Example Org</string>
+  <key>PayloadRemovalDisallowed</key>
+  <true/>
+  <key>PayloadType</key>
+  <string>Configuration</string>
+  <key>PayloadUUID</key>
+  <string>00000000-0000-4000-8000-000000000001</string>
+  <key>PayloadVersion</key>
+  <integer>1</integer>
+  <key>PayloadContent</key>
+  <array>
+    <dict>
+      <key>PayloadType</key>
+      <string>com.apple.wifi.managed</string>
+      <key>PayloadIdentifier</key>
+      <string>com.example.security-review.wifi</string>
+      <key>PayloadUUID</key>
+      <string>00000000-0000-4000-8000-000000000002</string>
+      <key>PayloadDisplayName</key>
+      <string>Office Wi-Fi</string>
+      <key>SSID_STR</key>
+      <string>Example Wi-Fi</string>
+      <key>Password</key>
+      <string>demo-secret</string>
+    </dict>
+    <dict>
+      <key>PayloadType</key>
+      <string>com.apple.vpn.managed</string>
+      <key>PayloadIdentifier</key>
+      <string>com.example.security-review.vpn</string>
+      <key>PayloadUUID</key>
+      <string>00000000-0000-4000-8000-000000000003</string>
+      <key>PayloadDisplayName</key>
+      <string>Example VPN</string>
+      <key>SharedSecret</key>
+      <string>vpn-secret</string>
+    </dict>
+    <dict>
+      <key>PayloadType</key>
+      <string>com.apple.security.root</string>
+      <key>PayloadIdentifier</key>
+      <string>com.example.security-review.root</string>
+      <key>PayloadUUID</key>
+      <string>00000000-0000-4000-8000-000000000004</string>
+      <key>PayloadDisplayName</key>
+      <string>Example Root Certificate</string>
+      <key>PayloadContent</key>
+      <data>Q0VSVElGSUNBVEU=</data>
+    </dict>
+    <dict>
+      <key>PayloadType</key>
+      <string>com.apple.applicationaccess</string>
+      <key>PayloadIdentifier</key>
+      <string>com.example.security-review.restrictions</string>
+      <key>PayloadUUID</key>
+      <string>00000000-0000-4000-8000-000000000005</string>
+      <key>PayloadDisplayName</key>
+      <string>Restrictions</string>
+      <key>allowAppInstallation</key>
+      <false/>
+    </dict>
+    <dict>
+      <key>PayloadType</key>
+      <string>com.example.unknown</string>
+      <key>PayloadIdentifier</key>
+      <string>com.example.security-review.unknown</string>
+      <key>PayloadUUID</key>
+      <string>00000000-0000-4000-8000-000000000006</string>
+      <key>PayloadDisplayName</key>
+      <string>Unknown Payload</string>
+    </dict>
+  </array>
+</dict>
+</plist>

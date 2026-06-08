@@ -1,0 +1,443 @@
+.plist-viewer {
+  --plist-viewer-border: var(--background-modifier-border);
+  --plist-viewer-muted: var(--text-muted);
+  --plist-viewer-code: var(--font-monospace);
+  --plist-viewer-key: #4fb3ff;
+  --plist-viewer-string: #e9c46a;
+  --plist-viewer-data: #f4a261;
+  --plist-viewer-bool: #62d26f;
+  --plist-viewer-warning: #f59e0b;
+  --plist-viewer-critical: #ef4444;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 0;
+  padding: 16px 18px 18px;
+}
+
+.plist-viewer__header {
+  align-items: flex-start;
+  border-bottom: 1px solid var(--plist-viewer-border);
+  display: flex;
+  flex: 0 0 auto;
+  gap: 12px;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding-bottom: 12px;
+}
+
+.plist-viewer__filename {
+  color: var(--text-normal);
+  font-size: 1.1em;
+  font-weight: 650;
+}
+
+.plist-viewer__path {
+  color: var(--plist-viewer-muted);
+  font-family: var(--plist-viewer-code);
+  font-size: 0.82em;
+  margin-top: 4px;
+  overflow-wrap: anywhere;
+}
+
+.plist-viewer__toolbar {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+  flex-wrap: wrap;
+  gap: 7px;
+  justify-content: flex-end;
+}
+
+.plist-viewer__search {
+  align-items: center;
+  background: var(--background-secondary);
+  border: 1px solid var(--plist-viewer-border);
+  border-radius: 6px;
+  display: flex;
+  gap: 6px;
+  height: 30px;
+  padding: 0 8px;
+}
+
+.plist-viewer__search-icon {
+  color: var(--plist-viewer-muted);
+  display: inline-flex;
+}
+
+.plist-viewer__search input {
+  background: transparent;
+  border: 0;
+  color: var(--text-normal);
+  font-size: 0.9em;
+  height: 24px;
+  min-width: 120px;
+  outline: 0;
+  padding: 0;
+  width: 180px;
+}
+
+.plist-viewer__segmented {
+  align-items: center;
+  background: var(--background-secondary);
+  border: 1px solid var(--plist-viewer-border);
+  border-radius: 6px;
+  display: inline-flex;
+  gap: 2px;
+  padding: 2px;
+}
+
+.plist-viewer__button,
+.plist-viewer__text-button {
+  align-items: center;
+  border-radius: 5px;
+  display: inline-flex;
+  height: 30px;
+  justify-content: center;
+}
+
+.plist-viewer__button {
+  width: 30px;
+}
+
+.plist-viewer__text-button {
+  background: transparent;
+  border: 0;
+  color: var(--text-muted);
+  cursor: pointer;
+  font-size: 0.86em;
+  font-weight: 600;
+  padding: 0 10px;
+}
+
+.plist-viewer__text-button:hover,
+.plist-viewer__text-button:focus-visible,
+.plist-viewer__text-button.is-active {
+  background: var(--background-modifier-hover);
+  color: var(--text-normal);
+}
+
+.plist-viewer__summary {
+  align-items: center;
+  color: var(--plist-viewer-muted);
+  display: flex;
+  flex: 0 0 auto;
+  flex-wrap: wrap;
+  font-size: 0.84em;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.plist-viewer__pill {
+  background: var(--background-secondary);
+  border: 1px solid var(--plist-viewer-border);
+  border-radius: 999px;
+  color: var(--text-normal);
+  font-family: var(--plist-viewer-code);
+  padding: 2px 8px;
+}
+
+.plist-viewer__pill--error {
+  border-color: var(--plist-viewer-critical);
+  color: var(--plist-viewer-critical);
+}
+
+.plist-viewer__note {
+  color: var(--plist-viewer-muted);
+}
+
+.plist-viewer__warnings {
+  background: var(--background-secondary);
+  border: 1px solid var(--plist-viewer-warning);
+  border-radius: 6px;
+  color: var(--text-normal);
+  flex: 0 0 auto;
+  margin: 0 0 10px;
+  padding: 10px 12px;
+}
+
+.plist-viewer__warnings-title {
+  color: var(--plist-viewer-warning);
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.plist-viewer__warning,
+.plist-viewer__warning-more,
+.plist-viewer__payload-warning {
+  color: var(--plist-viewer-muted);
+  font-family: var(--plist-viewer-code);
+  font-size: 0.84em;
+  white-space: pre-wrap;
+}
+
+.plist-viewer__warning--warning {
+  color: var(--plist-viewer-warning);
+}
+
+.plist-viewer__warning--critical {
+  color: var(--plist-viewer-critical);
+}
+
+.plist-viewer__body {
+  display: grid;
+  flex: 1 1 auto;
+  gap: 12px;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 320px);
+  min-height: 0;
+}
+
+.plist-viewer__main,
+.plist-viewer__tree,
+.plist-viewer__source,
+.plist-viewer__security {
+  min-height: 0;
+}
+
+.plist-viewer__tree,
+.plist-viewer__source,
+.plist-viewer__outline,
+.plist-viewer__security {
+  border: 1px solid var(--plist-viewer-border);
+  border-radius: 6px;
+  overflow: auto;
+}
+
+.plist-viewer__tree {
+  font-family: var(--plist-viewer-code);
+  font-size: 0.86em;
+  padding: 8px 10px 14px;
+}
+
+.plist-viewer__branch {
+  border-left: 1px solid var(--plist-viewer-border);
+  margin-left: 8px;
+  padding-left: 8px;
+}
+
+.plist-viewer__branch > summary {
+  cursor: pointer;
+  list-style-position: outside;
+}
+
+.plist-viewer__children {
+  margin-left: 8px;
+}
+
+.plist-viewer__row {
+  align-items: center;
+  border-radius: 4px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  min-height: 28px;
+  padding: 3px 5px;
+}
+
+.plist-viewer__row:hover {
+  background: var(--background-modifier-hover);
+}
+
+.plist-viewer__leaf {
+  border-left: 1px solid var(--plist-viewer-border);
+  margin-left: 8px;
+  padding-left: 8px;
+}
+
+.plist-viewer__key {
+  color: var(--plist-viewer-key);
+  font-weight: 700;
+}
+
+.plist-viewer__badge {
+  color: var(--plist-viewer-muted);
+  font-size: 0.78em;
+  text-transform: uppercase;
+}
+
+.plist-viewer__meta,
+.plist-viewer__path-chip {
+  color: var(--plist-viewer-muted);
+  font-size: 0.82em;
+  overflow-wrap: anywhere;
+}
+
+.plist-viewer__sensitive {
+  border: 1px solid var(--plist-viewer-warning);
+  border-radius: 4px;
+  color: var(--plist-viewer-warning);
+  font-size: 0.78em;
+  padding: 0 5px;
+  text-transform: uppercase;
+}
+
+.plist-viewer__value {
+  color: var(--text-normal);
+  font-family: var(--plist-viewer-code);
+  overflow-wrap: anywhere;
+  white-space: pre-wrap;
+}
+
+.plist-viewer__value.is-sensitive {
+  color: var(--plist-viewer-warning);
+}
+
+.plist-viewer__type-string .plist-viewer__value,
+.plist-viewer__tok-string {
+  color: var(--plist-viewer-string);
+}
+
+.plist-viewer__type-data .plist-viewer__value {
+  color: var(--plist-viewer-data);
+}
+
+.plist-viewer__type-bool .plist-viewer__value {
+  color: var(--plist-viewer-bool);
+}
+
+.plist-viewer__outline {
+  min-height: 0;
+  padding: 10px;
+}
+
+.plist-viewer__outline-title,
+.plist-viewer__section-title {
+  color: var(--text-normal);
+  font-size: 0.86em;
+  font-weight: 700;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.plist-viewer__outline-item {
+  border-bottom: 1px solid var(--plist-viewer-border);
+  display: grid;
+  gap: 2px;
+  padding: 7px 0;
+}
+
+.plist-viewer__outline-label {
+  color: var(--text-normal);
+  overflow-wrap: anywhere;
+}
+
+.plist-viewer__outline-meta {
+  color: var(--plist-viewer-muted);
+  font-family: var(--plist-viewer-code);
+  font-size: 0.78em;
+  overflow-wrap: anywhere;
+}
+
+.plist-viewer__security {
+  flex: 1 1 auto;
+  padding: 12px;
+}
+
+.plist-viewer__profile-grid {
+  display: grid;
+  gap: 8px;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  margin-bottom: 16px;
+}
+
+.plist-viewer__payload {
+  border-top: 1px solid var(--plist-viewer-border);
+  padding: 12px 0;
+}
+
+.plist-viewer__payload-title {
+  color: var(--text-normal);
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.plist-viewer__fact {
+  display: grid;
+  gap: 4px;
+  grid-template-columns: minmax(110px, 0.3fr) minmax(0, 1fr);
+  margin: 4px 0;
+}
+
+.plist-viewer__fact-label {
+  color: var(--plist-viewer-muted);
+  font-size: 0.84em;
+}
+
+.plist-viewer__fact-value {
+  color: var(--text-normal);
+  font-family: var(--plist-viewer-code);
+  overflow-wrap: anywhere;
+}
+
+.plist-viewer__source {
+  flex: 1 1 auto;
+}
+
+.plist-viewer__source pre {
+  font-family: var(--plist-viewer-code);
+  font-size: 0.84em;
+  margin: 0;
+  min-width: max-content;
+  padding: 8px 0;
+}
+
+.plist-viewer__source-line {
+  display: grid;
+  grid-template-columns: 54px minmax(0, 1fr);
+  min-height: 21px;
+}
+
+.plist-viewer__line-number {
+  color: var(--plist-viewer-muted);
+  padding-right: 12px;
+  text-align: right;
+  user-select: none;
+}
+
+.plist-viewer__source-code {
+  overflow-wrap: anywhere;
+  padding-right: 16px;
+  white-space: pre-wrap;
+}
+
+.plist-viewer__tok-comment {
+  color: var(--plist-viewer-muted);
+}
+
+.plist-viewer__tok-cdata,
+.plist-viewer__tok-tag {
+  color: var(--plist-viewer-key);
+}
+
+.plist-viewer__tok-attr {
+  color: var(--plist-viewer-data);
+}
+
+.plist-viewer__tok-punctuation {
+  color: var(--text-muted);
+}
+
+.plist-viewer__message {
+  color: var(--plist-viewer-muted);
+  padding: 12px;
+}
+
+@media (max-width: 760px) {
+  .plist-viewer {
+    padding: 12px;
+  }
+
+  .plist-viewer__header,
+  .plist-viewer__body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .plist-viewer__toolbar {
+    justify-content: flex-start;
+  }
+
+  .plist-viewer__search input {
+    width: 140px;
+  }
+}

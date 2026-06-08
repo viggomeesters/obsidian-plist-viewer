@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "https://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Servers</key>
+  <array>
+    <dict>
+      <key>Host</key>
+      <string>example.test</string>
+      <key>Port</key>
+      <integer>443</integer>
+    </dict>
+    <dict>
+      <key>Host</key>
+      <string>fallback.test</string>
+      <key>Port</key>
+      <integer>8443</integer>
+    </dict>
+  </array>
+  <key>Preferences</key>
+  <dict>
+    <key>Mode</key>
+    <string>strict</string>
+    <key>Tags</key>
+    <array>
+      <string>alpha</string>
+      <string>beta</string>
+    </array>
+  </dict>
+</dict>
+</plist>

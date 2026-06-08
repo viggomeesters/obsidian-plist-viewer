@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">PLIST Viewer screenshot</title>
+  <desc id="desc">Screenshot mock of PLIST Viewer showing a configuration profile tree, summary pills, warnings, and payload outline.</desc>
+  <rect width="1200" height="720" fill="#0f1419"/>
+  <rect x="48" y="42" width="1104" height="636" rx="10" fill="#171d24" stroke="#334155"/>
+  <text x="78" y="88" fill="#f8fafc" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700">profile.mobileconfig</text>
+  <text x="78" y="116" fill="#8e99ad" font-family="SFMono-Regular, Menlo, monospace" font-size="14">20_files/2026-06/profile.mobileconfig</text>
+  <rect x="620" y="62" width="190" height="34" rx="6" fill="#0d1218" stroke="#334155"/>
+  <text x="644" y="85" fill="#8e99ad" font-family="Inter, Arial, sans-serif" font-size="14">Filter</text>
+  <rect x="828" y="62" width="68" height="34" rx="6" fill="#24435b"/>
+  <text x="848" y="85" fill="#f8fafc" font-family="Inter, Arial, sans-serif" font-size="14">Tree</text>
+  <rect x="902" y="62" width="82" height="34" rx="6" fill="#0d1218" stroke="#334155"/>
+  <text x="918" y="85" fill="#8e99ad" font-family="Inter, Arial, sans-serif" font-size="14">Source</text>
+  <rect x="990" y="62" width="92" height="34" rx="6" fill="#0d1218" stroke="#334155"/>
+  <text x="1006" y="85" fill="#8e99ad" font-family="Inter, Arial, sans-serif" font-size="14">Security</text>
+  <rect x="78" y="146" width="90" height="26" rx="13" fill="#0d1218" stroke="#334155"/>
+  <text x="96" y="164" fill="#f8fafc" font-family="SFMono-Regular, Menlo, monospace" font-size="13">xml</text>
+  <rect x="182" y="146" width="118" height="26" rx="13" fill="#0d1218" stroke="#334155"/>
+  <text x="200" y="164" fill="#f8fafc" font-family="SFMono-Regular, Menlo, monospace" font-size="13">27 values</text>
+  <rect x="314" y="146" width="116" height="26" rx="13" fill="#0d1218" stroke="#334155"/>
+  <text x="335" y="164" fill="#f8fafc" font-family="SFMono-Regular, Menlo, monospace" font-size="13">read-only</text>
+  <rect x="78" y="184" width="760" height="54" rx="8" fill="#1f2937" stroke="#f59e0b"/>
+  <text x="104" y="216" fill="#f59e0b" font-family="SFMono-Regular, Menlo, monospace" font-size="15">Wi-Fi payload: Wi-Fi payloads can include network credentials.</text>
+  <rect x="78" y="260" width="760" height="364" rx="8" fill="#0d1218" stroke="#334155"/>
+  <text x="112" y="302" fill="#4fb3ff" font-family="SFMono-Regular, Menlo, monospace" font-size="17">root</text>
+  <text x="188" y="302" fill="#8e99ad" font-family="SFMono-Regular, Menlo, monospace" font-size="13">dict · 8 children</text>
+  <text x="142" y="348" fill="#4fb3ff" font-family="SFMono-Regular, Menlo, monospace" font-size="17">PayloadDisplayName</text>
+  <text x="342" y="348" fill="#e9c46a" font-family="SFMono-Regular, Menlo, monospace" font-size="17">Security Review Demo</text>
+  <text x="142" y="394" fill="#4fb3ff" font-family="SFMono-Regular, Menlo, monospace" font-size="17">PayloadContent</text>
+  <text x="302" y="394" fill="#8e99ad" font-family="SFMono-Regular, Menlo, monospace" font-size="13">array · 5 children</text>
+  <text x="172" y="440" fill="#4fb3ff" font-family="SFMono-Regular, Menlo, monospace" font-size="17">PayloadType</text>
+  <text x="320" y="440" fill="#e9c46a" font-family="SFMono-Regular, Menlo, monospace" font-size="17">com.apple.wifi.managed</text>
+  <text x="172" y="486" fill="#4fb3ff" font-family="SFMono-Regular, Menlo, monospace" font-size="17">Password</text>
+  <text x="286" y="486" fill="#f59e0b" font-family="SFMono-Regular, Menlo, monospace" font-size="17">[masked]</text>
+  <rect x="866" y="260" width="234" height="364" rx="8" fill="#0d1218" stroke="#334155"/>
+  <text x="892" y="294" fill="#8e99ad" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="700">OUTLINE</text>
+  <text x="892" y="334" fill="#4fb3ff" font-family="SFMono-Regular, Menlo, monospace" font-size="15">Office Wi-Fi</text>
+  <text x="892" y="358" fill="#8e99ad" font-family="SFMono-Regular, Menlo, monospace" font-size="12">com.example.security-review.wifi</text>
+  <text x="892" y="402" fill="#4fb3ff" font-family="SFMono-Regular, Menlo, monospace" font-size="15">Example VPN</text>
+  <text x="892" y="426" fill="#8e99ad" font-family="SFMono-Regular, Menlo, monospace" font-size="12">com.example.security-review.vpn</text>
+  <text x="892" y="470" fill="#ef4444" font-family="SFMono-Regular, Menlo, monospace" font-size="15">Root Certificate</text>
+</svg>

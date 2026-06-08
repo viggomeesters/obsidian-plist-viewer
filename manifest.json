@@ -1,0 +1,10 @@
+{
+  "id": "plist-viewer",
+  "name": "PLIST Viewer",
+  "version": "0.1.0",
+  "minAppVersion": "1.5.0",
+  "description": "Open .plist and .mobileconfig files as read-only trees with search, source view, and profile security warnings.",
+  "author": "Viggo Meesters",
+  "authorUrl": "https://github.com/viggomeesters",
+  "isDesktopOnly": false
+}
