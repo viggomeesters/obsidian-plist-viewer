@@ -35,7 +35,9 @@ jobs:
 
       - name: Read manifest version
         id: manifest
-        run: echo "version=$(node -p "require('./manifest.json').version")" >> "$GITHUB_OUTPUT"
+        run: |
+          version=$(node -p "require('./manifest.json').version")
+          echo "version=$version" >> "$GITHUB_OUTPUT"
 
       - name: Attest release assets
         uses: actions/attest-build-provenance@v3

@@ -4,7 +4,7 @@ Current release target: `0.1.0`
 
 ## Repository
 
-- [x] Public GitHub repository exists or is ready to create.
+- [x] Public GitHub repository exists: `https://github.com/viggomeesters/obsidian-plist-viewer`.
 - [x] `README.md` describes what the plugin does and how to use it.
 - [x] `README.md` states that profiles are inspected only and never installed or applied.
 - [x] `LICENSE` exists.
@@ -19,10 +19,10 @@ Current release target: `0.1.0`
 - [x] `npm run build` passes.
 - [x] `npx tsc --noEmit` passes.
 - [x] `npm test` passes.
-- [x] Release tag should equal `manifest.json.version`.
-- [x] Release assets should include `main.js`.
-- [x] Release assets should include `manifest.json`.
-- [x] Release assets should include `styles.css`.
+- [x] Release tag `0.1.0` equals `manifest.json.version`.
+- [x] Release assets include `main.js`.
+- [x] Release assets include `manifest.json`.
+- [x] Release assets include `styles.css`.
 
 ## Directory Submission
 
