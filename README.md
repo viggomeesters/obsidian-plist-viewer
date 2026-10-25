@@ -51,11 +51,9 @@ Binary plist support in v0.1 is detection-only. Files starting with the `bplist0
 
 ### Community plugin directory
 
-PLIST Viewer is prepared for Community plugin directory submission. Once accepted, it can be installed from **Settings -> Community plugins -> Browse**.
+Install from the [Obsidian Community directory](https://community.obsidian.md/plugins/plist-viewer) or search for PLIST Viewer in Settings → Community plugins → Browse.
 
 ### Manual installation
-
-Until the community directory submission is accepted:
 
 1. Download `main.js`, `manifest.json`, and `styles.css` from the [latest release](https://github.com/viggomeesters/obsidian-plist-viewer/releases/latest).
 2. Create this folder in your vault: `.obsidian/plugins/plist-viewer/`.
@@ -103,20 +101,9 @@ Community plugin files are installed from GitHub releases. For each release:
 3. Create a GitHub release whose tag exactly matches `manifest.json.version`.
 4. Attach `main.js`, `manifest.json`, and `styles.css` as release assets.
 
-## Community directory submission
+## Community directory
 
-Submit this repository URL:
-
-```text
-https://github.com/viggomeesters/obsidian-plist-viewer
-```
-
-The repository contains the expected root plugin files, security-focused documentation, parser fixtures, runtime assets, and version metadata for a v0.1.0 release.
-
-Official references:
-
-- [Submit your plugin](https://docs.obsidian.md/Plugins/Releasing/Submit%20your%20plugin)
-- [Obsidian releases repository](https://github.com/obsidianmd/obsidian-releases)
+PLIST Viewer is listed in the [Obsidian Community directory](https://community.obsidian.md/plugins/plist-viewer).
 
 ## License
 
