@@ -1,6 +1,8 @@
 import fs from "node:fs";
 
 const manifest = JSON.parse(fs.readFileSync("manifest.json", "utf8"));
+const releasePackage = JSON.parse(fs.readFileSync("package.json", "utf8"));
+const releaseVersions = JSON.parse(fs.readFileSync("versions.json", "utf8"));
 const main = fs.readFileSync("src/main.ts", "utf8");
 const parser = fs.readFileSync("src/parser.ts", "utf8");
 const styles = fs.readFileSync("styles.css", "utf8");
@@ -22,7 +24,7 @@ const runtimeText = `${main}\n${parser}\n${styles}`;
 const assertions = [
   [manifest.id === "plist-viewer", "manifest id is plist-viewer"],
   [manifest.name === "PLIST Viewer", "manifest name is PLIST Viewer"],
-  [manifest.version === "0.1.0", "manifest version is 0.1.0"],
+  [manifest.version === releasePackage.version && /^\d+\.\d+\.\d+$/.test(manifest.version) && releaseVersions[manifest.version] === manifest.minAppVersion, "release version matches package and supported app version"],
   [!/obsidian/i.test(manifest.description), "manifest description avoids product name"],
   [main.includes("registerExtensions(PLIST_EXTENSIONS"), "extensions are registered"],
   [main.includes("[\"plist\", \"mobileconfig\"]"), "plist and mobileconfig extensions are in scope"],

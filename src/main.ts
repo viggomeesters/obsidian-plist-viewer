@@ -363,7 +363,7 @@ function renderSource(parent: HTMLElement, data: string): void {
 }
 
 function highlightXmlLine(parent: HTMLElement, line: string): void {
-  const tokenPattern = /(<!--.*?-->|<!\[CDATA\[.*?\]\]>|<\/?[A-Za-z_][\w:.-]*|[A-Za-z_:][\w:.-]*(?=\=)|"[^"]*"|'[^']*'|[<>/=])/g;
+  const tokenPattern = /(<!--.*?-->|<!\[CDATA\[.*?\]\]>|<\/?[A-Za-z_][\w:.-]*|[A-Za-z_:][\w:.-]*(?==)|"[^"]*"|'[^']*'|[<>/=])/g;
   let cursor = 0;
 
   for (const match of line.matchAll(tokenPattern)) {
