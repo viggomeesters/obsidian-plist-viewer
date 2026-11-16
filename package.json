@@ -21,7 +21,7 @@
   "dependencies": {},
   "devDependencies": {
     "@types/node": "^24.10.1",
-    "@xmldom/xmldom": "^0.8.11",
+    "@xmldom/xmldom": "0.8.15",
     "esbuild": "^0.25.12",
     "obsidian": "^1.8.7",
     "typescript": "^5.9.3"
