@@ -1,4 +1,6 @@
 .plist-viewer {
+  container-name: plist-viewer;
+  container-type: inline-size;
   --plist-viewer-border: var(--background-modifier-border);
   --plist-viewer-muted: var(--text-muted);
   --plist-viewer-code: var(--font-monospace);
@@ -422,6 +424,21 @@
   padding: 12px;
 }
 
+@container plist-viewer (max-width: 760px) {
+  .plist-viewer__header,
+  .plist-viewer__body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .plist-viewer__toolbar {
+    justify-content: flex-start;
+  }
+
+  .plist-viewer__search input {
+    width: 140px;
+  }
+}
 @media (max-width: 760px) {
   .plist-viewer {
     padding: 12px;
